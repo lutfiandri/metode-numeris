@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace metode_numeris
+namespace regression_calculator
 {
   class Program
   {

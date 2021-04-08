@@ -1,4 +1,4 @@
-namespace metode_numeris
+namespace regression_calculator
 {
   public class GaussJordan
   {
