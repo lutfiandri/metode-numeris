@@ -9,7 +9,7 @@ namespace metode_numeris
     protected double x_bar;
     protected double y_bar;
     protected int n;
-    protected string solvedEquation;
+    public string equationString;
 
     public Regression(double[] X, double[] Y)
     {
@@ -18,10 +18,11 @@ namespace metode_numeris
       this.x_bar = Numeric.Average(this.X);
       this.y_bar = Numeric.Average(this.Y);
       this.n = X.Length;
+      this.Solve();
     }
 
-    public abstract string Solve();
+    protected abstract void Solve();
 
-    public abstract double[] CorrelationCoef();
+    // public abstract double[] CorrelationCoef();
   }
 }

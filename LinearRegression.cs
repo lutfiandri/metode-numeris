@@ -4,14 +4,14 @@ namespace metode_numeris
 {
   public class LinearRegression : Regression
   {
-    private double a;
-    private double b;
+    public double a { get; set; }
+    public double b { get; set; }
 
     public LinearRegression(double[] X, double[] Y) : base(X, Y)
     { }
 
     override
-    public string Solve()
+    protected void Solve()
     {
       this.b = (this.n * Numeric.Sum(Numeric.Multiply(X, Y)) - Numeric.Sum(X) * Numeric.Sum(Y))
              / (this.n * Numeric.Sum(Numeric.Multiply(X, X)) - Numeric.Sum(X) * Numeric.Sum(X));
@@ -21,16 +21,15 @@ namespace metode_numeris
       string a_text = this.a > 0 ? $"{this.a:0.000}" : $"- {-this.a:0.000}";
       string b_text = this.b > 0 ? $"+ {this.b:0.000}" : $"- {-this.b:0.000}";
 
-      this.solvedEquation = $"y = {a_text}x {b_text}";
-      return (this.solvedEquation);
+      this.equationString = $"y = {a_text}x {b_text}";
     }
 
-    override
-    public double[] CorrelationCoef()
-    {
-      Console.WriteLine("solve");
-      double[] x = { 1, 2, 3 };
-      return (x);
-    }
+    // override
+    // public double[] CorrelationCoef()
+    // {
+    //   Console.WriteLine("solve");
+    //   double[] x = { 1, 2, 3 };
+    //   return (x);
+    // }
   }
 }
