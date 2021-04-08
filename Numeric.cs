@@ -105,6 +105,16 @@ namespace regression_calculator
       return (Sum(nums) / nums.Length);
     }
 
+    public static double[] Pow(double[] X, double y)
+    {
+      double[] Result = new double[X.Length];
+      for (int i = 0; i < X.Length; ++i)
+      {
+        Result[i] = Math.Pow(X[i], y);
+      }
+      return Result;
+    }
+
     public static double[] Log(double[] X)
     {
       double[] Result = new double[X.Length];

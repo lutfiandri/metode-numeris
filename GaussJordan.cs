@@ -37,7 +37,6 @@ namespace regression_calculator
           if (i == j) continue;
           this.B[j] = B[j] - this.B[i] * this.A[j][i];
           this.A[j] = Numeric.Subtract(this.A[j], Numeric.Multiply(this.A[i], this.A[j][i]));
-          Console.WriteLine(this.A[j][0]);
         }
       }
 
