@@ -20,6 +20,27 @@ namespace regression_calculator
       ExponentialRegression exponentialRegression = new ExponentialRegression(X, Y);
       Console.WriteLine(exponentialRegression.equationString);
       Console.WriteLine();
+
+      PolynomialRegression polynomialRegression = new PolynomialRegression(X, Y);
+      Console.WriteLine(polynomialRegression.equationString);
+      Console.WriteLine();
+
+      // [8, -2, -1, 4],
+      // [2, 8, 2, -1],
+      // [-1, 2, 8, 2],
+      // [4, -1, 2, 8]
+
+      // double[][] A = {
+      //   new double[] {8, -2, -1, 4},
+      //   new double[] {2, 8, 2, -1},
+      //   new double[] {-1, 2, 8, 2},
+      //   new double[] {4, -1, 2, 8}
+      // };
+
+      // double[] B = { 17, 9, -10, 4 };
+
+      // GaussJordan gaussJordan = new GaussJordan(A, B);
+      // Console.WriteLine();
     }
   }
 }
