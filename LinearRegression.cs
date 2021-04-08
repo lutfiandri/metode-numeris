@@ -13,17 +13,16 @@ namespace metode_numeris
     override
     public string Solve()
     {
-      Console.WriteLine("solve with linear regression");
-      // b = (n * np.sum(data['xiyi']) - np.sum(data['xi']) *
-      //      np.sum(data['yi']))/(n * np.sum(data['xi2']) - np.sum(data['xi'])**2)
-      // a = y_bar - b * x_bar
-      this.b = (base.n * Numeric.Sum(Numeric.Multiply(X, Y)) - Numeric.Sum(X) * Numeric.Sum(Y))
-             / (base.n * Numeric.Sum(Numeric.Multiply(X, X)) - Numeric.Sum(X) * Numeric.Sum(X));
+      this.b = (this.n * Numeric.Sum(Numeric.Multiply(X, Y)) - Numeric.Sum(X) * Numeric.Sum(Y))
+             / (this.n * Numeric.Sum(Numeric.Multiply(X, X)) - Numeric.Sum(X) * Numeric.Sum(X));
 
-      this.a = base.y_bar - this.b * base.x_bar;
+      this.a = this.y_bar - this.b * this.x_bar;
 
-      string equationString = $"y = {this.a}x + {this.b}";
-      return (equationString);
+      string a_text = this.a > 0 ? $"{this.a:0.000}" : $"- {-this.a:0.000}";
+      string b_text = this.b > 0 ? $"+ {this.b:0.000}" : $"- {-this.b:0.000}";
+
+      this.solvedEquation = $"y = {a_text}x {b_text}";
+      return (this.solvedEquation);
     }
 
     override
