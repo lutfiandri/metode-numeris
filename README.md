@@ -1,3 +1,26 @@
-# regression-calculator
+# Regression Calculator
 
-Metode Numeris dengan konsep OOP
+**UTS Pemrograman Berorientasi Objek**
+
+Nama : Lutfi Andriyanto
+NIM : 20/456370/TK/50500
+
+## Informasi Umum
+
+Regression Calculator adalah aplikasi console untuk menghitung garis regresi dan koefisien determinasi. Abstraksi utama aplikasi yakni pada class “Regression”.
+
+## Metode Regresi yang Tersedia
+
+| Metode                         | Garis Regresi                  |
+| ------------------------------ | ------------------------------ |
+| Linear Regression              | `y = a + bx`                   |
+| Power Regression               | `y = ax^b`                     |
+| Exponential Regression         | `y = ae^(bx)`                  |
+| Polynomial Regression (Ordo 1) | `y = a0 + a1x`                 |
+| Polynomial Regression (Ordo 2) | `y = a0 + a1x + a2x^2`         |
+| Polynomial Regression (Ordo 3) | `y = a0 + a1x + a2x^2 + a3x^3` |
+
+## ScreenShot
+
+![ScreenShot 1](docs/img/ss-1.png)
+![ScreenShot 2](docs/img/ss-2.png)
