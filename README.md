@@ -2,7 +2,7 @@
 
 **UTS Pemrograman Berorientasi Objek**
 
-Nama : Lutfi Andriyanto
+Nama : Lutfi Andriyanto\
 NIM : 20/456370/TK/50500
 
 ## Informasi Umum
