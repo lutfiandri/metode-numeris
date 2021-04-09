@@ -10,7 +10,7 @@ namespace regression_calculator
     protected double x_bar { get; set; }
     protected double y_bar { get; set; }
     protected int n { get; set; }
-    public double correlationCoef { get; protected set; }
+    public double determinationCoef { get; protected set; }
     public string equation { get; protected set; }
 
     public Regression(double[] X, double[] Y)
@@ -38,17 +38,30 @@ namespace regression_calculator
 
     public double Dt()
     {
+      Console.WriteLine($"Dt : {Numeric.Sum(Numeric.Pow(Numeric.Subtract(this.Y, Numeric.Average(this.Y)), 2))}");
       return Numeric.Sum(Numeric.Pow(Numeric.Subtract(this.Y, Numeric.Average(this.Y)), 2));
     }
 
     public double LeastSquareError()
     {
+      Console.WriteLine($"LSE: {Numeric.Sum(Numeric.Pow(Numeric.Subtract(this.Y, this.YRegression), 2))}");
       return Numeric.Sum(Numeric.Pow(Numeric.Subtract(this.Y, this.YRegression), 2));
     }
 
-    public double CorrelationCoef()
+    public double DeterminationCoef()
     {
-      return Math.Sqrt((this.Dt() * this.LeastSquareError()) / this.Dt());
+      double Dt = this.Dt();
+      double D = this.LeastSquareError();
+      return Math.Sqrt((Dt - D) / Dt);
+    }
+
+    public void PeekArray(double[] Arr)
+    {
+      Console.WriteLine("Peek array");
+      foreach (var x in Arr)
+      {
+        Console.WriteLine(x);
+      }
     }
   }
 }

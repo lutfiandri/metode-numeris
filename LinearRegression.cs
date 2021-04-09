@@ -22,15 +22,15 @@ namespace regression_calculator
       string a_text = this.a >= 0 ? $"{this.a:0.000}" : $"- {-this.a:0.000}";
       string b_text = this.b >= 0 ? $"+ {this.b:0.000}" : $"- {-this.b:0.000}";
 
-      this.equation = $"y = {a_text}x {b_text}";
+      this.equation = $"y = {b_text}x {a_text}";
 
       this.YRegression = this.F();
-      this.correlationCoef = this.Dt();
+      this.determinationCoef = this.DeterminationCoef();
     }
 
     public override double f(double x)
     {
-      return this.a * x + this.b;
+      return this.a + this.b * x;
     }
   }
 }

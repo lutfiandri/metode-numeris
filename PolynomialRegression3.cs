@@ -24,6 +24,9 @@ namespace regression_calculator
       string a0_text = this.constant["a0"] >= 0 ? $"+ {this.constant["a0"]:0.000}" : $"- {-this.constant["a0"]:0.000}";
 
       this.equation = $"y = {a3_text}x^3 {a2_text}x^2 {a1_text}x {a0_text}";
+
+      this.YRegression = this.F();
+      this.determinationCoef = this.DeterminationCoef();
     }
 
 
@@ -56,7 +59,7 @@ namespace regression_calculator
 
     public override double f(double x)
     {
-      return this.constant["a3"] * Math.Pow(x, 3) + this.constant["a2"] * Math.Pow(x, 2) + this.constant["a1"] * x + this.constant["a1"];
+      return this.constant["a3"] * Math.Pow(x, 3) + this.constant["a2"] * Math.Pow(x, 2) + this.constant["a1"] * x + this.constant["a0"];
     }
   }
 }

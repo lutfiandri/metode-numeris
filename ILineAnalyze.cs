@@ -4,6 +4,6 @@ namespace regression_calculator
   {
     double Dt();
     double LeastSquareError();
-    double CorrelationCoef();
+    double DeterminationCoef();
   }
 }

@@ -27,6 +27,9 @@ namespace regression_calculator
       string a0_text = this.constant["a0"] >= 0 ? $"+ {this.constant["a0"]:0.000}" : $"- {-this.constant["a0"]:0.000}";
 
       this.equation = $"y = {a1_text}x {a0_text}";
+
+      this.YRegression = this.F();
+      this.determinationCoef = this.Dt();
     }
 
     protected virtual void setMatrix()

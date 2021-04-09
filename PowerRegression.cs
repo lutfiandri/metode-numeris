@@ -35,7 +35,8 @@ namespace regression_calculator
 
       this.equation = $"y = {a_text}x^{b_text}";
 
-      // this.YRegression = this.F();
+      this.YRegression = this.F();
+      this.determinationCoef = this.DeterminationCoef();
     }
 
     public override double f(double x)
