@@ -11,29 +11,30 @@ namespace regression_calculator
               1.05, 1.85, 1.74, 1.65, 1.78, 1.71, 2.29, 1.82, 2.06, 2.14, 1.27 };
 
       LinearRegression linearRegression = new LinearRegression(X, Y);
-      Console.WriteLine(linearRegression.equationString);
+      Console.WriteLine(linearRegression.equation);
+      Console.WriteLine(linearRegression.correlationCoef);
       Console.WriteLine();
 
       PowerRegression powerRegression = new PowerRegression(X, Y);
-      Console.WriteLine(powerRegression.equationString);
+      Console.WriteLine(powerRegression.equation);
       Console.WriteLine();
 
       ExponentialRegression exponentialRegression = new ExponentialRegression(X, Y);
-      Console.WriteLine(exponentialRegression.equationString);
+      Console.WriteLine(exponentialRegression.equation);
       Console.WriteLine();
 
       PolynomialRegression polynomialRegression = new PolynomialRegression(X, Y);
-      Console.WriteLine(polynomialRegression.equationString);
+      Console.WriteLine(polynomialRegression.equation);
       Console.WriteLine();
 
       // Polymorphisme
       PolynomialRegression polynomialRegression2 = new PolynomialRegression2(X, Y);
-      Console.WriteLine(polynomialRegression2.equationString);
+      Console.WriteLine(polynomialRegression2.equation);
       Console.WriteLine();
 
       // Polymorphisme
       PolynomialRegression polynomialRegression3 = new PolynomialRegression3(X, Y);
-      Console.WriteLine(polynomialRegression3.equationString);
+      Console.WriteLine(polynomialRegression3.equation);
       Console.WriteLine();
 
       // [8, -2, -1, 4],
