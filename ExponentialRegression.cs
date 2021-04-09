@@ -28,10 +28,13 @@ namespace regression_calculator
       this.a = Math.Exp(this.lr.a);
       this.b = this.lr.b;
 
-      string a_text = this.a > 0 ? $"{a:0.000}" : $"-{-a:0.000}";
+      string a_text = this.a > 0 ? $"{a:0.000}" : $"- {-a:0.000}";
       string b_text = this.b > 0 ? $"{b:0.000}x" : $"(-{-b:0.000}x)";
 
       this.equation = $"y = {a_text}e^{b_text}";
+
+      this.YRegression = this.F();
+      this.determinationCoef = this.DeterminationCoef();
     }
 
     public override double f(double x)

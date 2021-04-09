@@ -19,8 +19,8 @@ namespace regression_calculator
 
       this.a = this.y_bar - this.b * this.x_bar;
 
-      string a_text = this.a >= 0 ? $"{this.a:0.000}" : $"- {-this.a:0.000}";
-      string b_text = this.b >= 0 ? $"+ {this.b:0.000}" : $"- {-this.b:0.000}";
+      string a_text = this.a >= 0 ? $"+ {this.a:0.000}" : $"- {-this.a:0.000}";
+      string b_text = this.b >= 0 ? $"{this.b:0.000}" : $"- {-this.b:0.000}";
 
       this.equation = $"y = {b_text}x {a_text}";
 

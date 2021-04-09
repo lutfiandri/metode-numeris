@@ -29,7 +29,7 @@ namespace regression_calculator
       this.equation = $"y = {a1_text}x {a0_text}";
 
       this.YRegression = this.F();
-      this.determinationCoef = this.Dt();
+      this.determinationCoef = this.DeterminationCoef();
     }
 
     protected virtual void setMatrix()
@@ -55,7 +55,7 @@ namespace regression_calculator
 
     public override double f(double x)
     {
-      return this.constant["a1"] * x + this.constant["a1"];
+      return this.constant["a1"] * x + this.constant["a0"];
     }
   }
 }

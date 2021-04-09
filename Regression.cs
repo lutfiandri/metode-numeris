@@ -38,13 +38,11 @@ namespace regression_calculator
 
     public double Dt()
     {
-      Console.WriteLine($"Dt : {Numeric.Sum(Numeric.Pow(Numeric.Subtract(this.Y, Numeric.Average(this.Y)), 2))}");
       return Numeric.Sum(Numeric.Pow(Numeric.Subtract(this.Y, Numeric.Average(this.Y)), 2));
     }
 
     public double LeastSquareError()
     {
-      Console.WriteLine($"LSE: {Numeric.Sum(Numeric.Pow(Numeric.Subtract(this.Y, this.YRegression), 2))}");
       return Numeric.Sum(Numeric.Pow(Numeric.Subtract(this.Y, this.YRegression), 2));
     }
 
