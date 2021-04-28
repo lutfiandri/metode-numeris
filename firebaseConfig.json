@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "regression-calculator-6a16a",
+  "private_key_id": "a1a296bfd162f2a47893a448d0c0f9af828c5c55",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCN477mzImi2zt+\nR21eFlOeKz2YyGKzutINSs6Eb2HaVOpIWNvUGGHqaeGuBmhtPY9TD10yHD0dCseS\nylIPxRf/T16ea6hn7NUjgPlsZ4wz6dNfK71E+hEKV02umj+R2pWqZJXr4e2DE1of\nAEPqTfugGdp+sMHpqK0BJHXN7aq+LFWMBgDPX603ogduq5oPSK8SmOGEtoDwEec6\nhAl5zJKlSpN3FpdZNm/+Hw3GKK2x0YrICsT/4PKdRVuy6B24ncDojO3kJB0ZlpWV\n7hayEzgAKSYf62R9EGiOYw+m1WoHYCr+A13QW9a+bXy67jLQgjyIFdSvpfo1Ks4b\nI0OOfmOpAgMBAAECggEABN4QlbyOcVb7DnOPE7ST860OUNl5SFWISz2FwjWLdO4n\njNSOiFMPTdeKGZpoQUIaEp/S7cCEqK8ZW6aOOYgEe8Uft53Kwh5AjWDz6CqmXL62\nBMcRzWX/iRF9DYMGsKn/1cpGTy2Z5HPuH3o2pOOotixDinJ6w87IuOKvhLaqiNmc\nVUu9Ex1qAmxvS3g9GJHW9aaVdTIYR2u/Tka5VlgmSgXTHY30x8/v4SWCDt89CNAs\nCOARjGnvGvry5slLQuRx/lyXIf1j0pLuM3F91lfE7cQmKkb2y2cYUAUMJdqu7PBu\nkK2jxrSRpejv571tu1qXin/vgrqLhJSNy4bwn9sV4QKBgQDCg1ls8s1CkIJG+Lk0\n9pqwJCOqyu3PHx4UzIcFznaEfaEoyoE91y6dtDehW4oHsNksrrYJdizdGBGF+Nkc\nheDkLgafnS4lmLn8R+tMzc35v19EX7Wa1zmorBFkhQU4HzTRqKJlwUl8QPcP3dvC\ne/D05lE61lBw46vXkarBTsC3IQKBgQC6ve4oJjVJWb4W6EHqQRFOBNoPdiKnT2Bq\nzUr31CP4n6gcRna1l5pTF8Wg87PaVa8MgvXvr9nz31oF0aUjuf/ahBOTDxAj1K2T\n7LFwvMAwrzj/LhLejZe8nvoeJoF+hY1AaYitIdDhrsz2bMnGYzDx4Oa1SDPTtSaw\n9EMXi1cDiQKBgBVQKSNL83vAs9Ws+TY5czerrhDPzYDtavFie8UCG3BnB5qdnc21\n31C+Z34Rtq0jDpjbx+x/e2j6cykX3EpIzRyTgnxIz76k3nQrOTggMNqVwo2OYyrF\nPHcj63/1J14/5Ry3+ptls3Se9bNSXvsPc5aSCgKFaykDeVfUiT5HL8yhAoGBAJso\ntlnrrTi99SBpaGMwHyW5CEnyeUaUwGLdIl4aiKzKU07zCS1GwrYpuU5LTvOpX+HA\naoH1ld14hf7xuwmdQMWaGf2FdX6f9n1DHAe0/Oc2n9/+szTxZtMVMHKewdeTNdMA\nHMzlnP33VFun9lr9DazbljWnwVA1YumCesB0SR8pAoGBAJt/ONo9vxNH2o9FjAXU\nh4xbokMeoHEC+N9tNzV6FdLhdoBO+W0HvJUse9cMNoQl/KnoOFPLnINXCcjQvOPT\nmzoM7PydTPCG4WXe7IKbVtydrzZ6vek7Ct9Dur3pD34msIKJVn8cplyQhvjo96ov\nyy3kEpkbb+IjqKVJxmRB7lis\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-zr9p0@regression-calculator-6a16a.iam.gserviceaccount.com",
+  "client_id": "102151654121292764459",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-zr9p0%40regression-calculator-6a16a.iam.gserviceaccount.com"
+}

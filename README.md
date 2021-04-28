@@ -2,6 +2,8 @@
 
 **UTS Pemrograman Berorientasi Objek**
 
+**Plus Tugas Database** &rarr; kali ini saya menggunakan Firestore.
+
 Nama : Lutfi Andriyanto\
 NIM : 20/456370/TK/50500
 
@@ -20,7 +22,3 @@ Regression Calculator adalah aplikasi console untuk menghitung garis regresi dan
 | Polynomial Regression (Ordo 2) | `y = a0 + a1x + a2x^2`         |
 | Polynomial Regression (Ordo 3) | `y = a0 + a1x + a2x^2 + a3x^3` |
 
-## ScreenShot
-
-![ScreenShot 1](docs/img/ss-1.png)
-![ScreenShot 2](docs/img/ss-2.png)

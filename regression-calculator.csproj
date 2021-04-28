@@ -6,4 +6,19 @@
     <RootNamespace>regression_calculator</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="firebaseConfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="firebaseConfig.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Cloud.Firestore" Version="2.3.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.5" />
+  </ItemGroup>
+
 </Project>
